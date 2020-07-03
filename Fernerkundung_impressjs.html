@@ -1,69 +1,57 @@
 <!doctype html>
-<html>
+<html lang="de">
 <head>
-<style>
-body{
-	background-color: #dfdfdf;
-}
-.box {
-	display: block;
-	width: 800px;
-	height: 600px;
-	padding: 30px 50px;
-	background-color: white;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-	border: 1px solid rgba(0, 0, 0, .3);
-	border-radius: 20px;
-	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-	font-family: Arial, sans-serif;
-	font-size: 40px;
-	color: rgb(102, 102, 102);
-}
-</style>
+    <meta charset="utf-8" />
+    <title>Cube | Explore impress.js in 3D | by Henrik Ingo @henrikingo</title>
+    <meta name="description" content="Explore impress.js in 3D" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="css/cube.css" rel="stylesheet" />
 </head>
-<body>
 
-<div id="impress">
-
-<div class="step box" data-x="0" data-y="0" data-rotate="90">
-	<p>This is my first slide!!</p>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
-<div class="step box" data-x="0" data-y="1000" data-rotate-y="90">
-	<p>This is my second slide!!</p>
+<div id="impress" data-transition-duration="2000">
+
+    <div class="step" data-x="0" data-y="0" data-z="350">
+        <p>Slide one</p>
+    </div>
+
+    <div class="step" data-x="350" data-y="0" data-z="0" data-rotate-y="90">
+        <p>Slide two</p>
+    </div>
+
+    <div class="step" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90">
+        <p>Slide three</p>
+    </div>
+
+    <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90">
+        <p>Slide four</p>
+    </div>
+
+    <div class="step" data-x="-350" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180">
+        <p>Slide five</p>
+    </div>
+
+    <div class="step" data-x="0" data-y="0" data-z="-350" data-rotate-y="-180" data-rotate-z="-180">
+        <p>Slide six</p>
+    </div>
+
+    <div id="overview" class="step" data-x="700" data-y="-100" data-z="1000" data-scale="1" style="pointer-events: none;">
+    </div>
 </div>
 
-<div class="step box" data-z="2000" data-y="1000" data-rotate="180">
-	<p>This is my third slide!!</p>
-</div>
-	
-<div class="step box" data-x="0" data-y="1000" data-scale="2">	
-	<p>Vierte Folie</p>
-</div>
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
 
-<div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-	  <p>and <b>tiny</b> ideas</p>
-</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</div>
 
-<script src="js/impress.js"></script>
-<script>
-impress().init();
-</script>
+
+<script type="text/javascript" src="impress.js/js/impress.js"></script>
+
+<script>impress().init();</script>
+
 </body>
+</html>	
