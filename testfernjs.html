@@ -19,7 +19,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Classic Slides with impress.js | Simple example impress.js slide show | by Henrik Ingo @henrikingo</title>
+    <title>Fernerkundung - Anwendungen | Inhalt (Dr. Dubois) | Präsentation (Paul Ehrhardt) | Code by Henrik Ingo @henrikingo</title>
     
     <meta name="description" content="Simple example impress.js slide show" />
     <meta name="author" content="Henrik Ingo" />
@@ -91,7 +91,7 @@
     data-min-scale="0"
     data-perspective="1000"
 
-    data-autoplay="10">
+    data-autoplay="40">
 
     <!--
         Each step of the presentation should be an element inside the `#impress` with a class name
@@ -116,10 +116,9 @@
         your cooler impress.js presentations.
     -->
     <div class="step slide title" data-x="-2200" data-y="-3000">
-        <h1>Example Presentation: <br />
-            Classic Slides</h1>
-        <h2>Henrik Ingo</h2>
-        <h3>2015</h3>
+        <h1>Fernerkundung - Anwendungen</h1>
+        <h2>GEOG 345 Einführung in die Fernerkundung für Schulen (Vorlesung 2)</h2>
+        <h3><a href="https://www.geographie.uni-jena.de/Dubois">Dr. Clémence Dubois</a> (Inhalt), Paul Ehrhardt (Präsentation) | <a href="https://www.geographie.uni-jena.de/eo.html">Lehrstuhl für Fernerkundung</a></h3>
 
         <div class="notes">
         Any element with the class="notes" will not be displayed. This can
@@ -128,17 +127,17 @@
         </div>
     </div>
 
-    <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
-        <h1>Table of Contents</h1>
+    <div id="Hauptmenü" class="step slide" data-rel-x="2200" data-rel-y="0">
+        <h1>Anwendungen</h1>
         <ul>
-            <li><a href="#step-1">A title slide</a></li>
-            <li><a href="#step-2">Table of Contents</a></li>
-            <li><a href="#step-3">Text slide</a></li>
-            <li><a href="#step-4">Bullet points</a></li>
-            <li><a href="#step-5">Blockquote &amp; image</a></li>
-            <li><a href="#step-6">More basic text styles</a></li>
-            <li><a href="#step-7">Motion effects 101</a></li>
-            <li><a href="#addons">Add-ons</a></li>
+            <li><a href="#step-1">Forstwirtschaft</a></li>
+            <li><a href="#step-2">Landwirtschaft</a></li>
+            <li><a href="#step-3">Bodenkunde und Geologie</a></li>
+            <li><a href="#step-4">Meteorologie und Klimaforschung</a></li>
+            <li><a href="#step-5">Ozeanographie und Gewässerkunde</a></li>
+            <li><a href="#step-6">Kartographie und GIS</a></li>
+            <li><a href="#step-7">Archäologie</a></li>
+            <li><a href="#addons">Quellen</a></li>
             <li><a href="#moreinfo">More info</a></li>
         </ul>
 
@@ -152,11 +151,9 @@
         </div>
     </div>
 
-    <div class="step slide">
-        <h1>A slide with text</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
+    <div id="Forstwirtschaft" class="step slide">
+        <h1>Forstwirtschaft</h1>
+        
 
         <div class="notes">
          In this slide, we don't even specify the relative position, rather
@@ -165,8 +162,8 @@
         </div>
     </div>
 
-    <div class="step slide">
-        <h1>Bullet points</h1>
+    <div id="Landwirtschaft" class="step slide">
+        <h1>Landwirtschaft</h1>
         <ul>
             <li>A slide with bullet points. This is the first point.</li>
             <li>Second point</li>
@@ -188,42 +185,30 @@
         Notation shouldn't be a surprise. We use `data-rotate="30"` attribute, meaning that this
         element should be rotated by 30 degrees clockwise.        
     -->
-    <div class="step slide" data-rel-x="2200" data-rel-y="600" data-rotate="30">
-        <h1>A blockquote &amp; image</h1>
-        <img src="images/3476636111_c551295ca4_b.jpg" 
-             alt="Mother Teresa holding a newborn baby" 
-             class="right"/>
-        <blockquote>
-        Spread love everywhere you go. <br />Let no one ever come to you without leaving happier.
-        <p style="text-align: right">Mother Teresa</p>
-        <p class="left bottom"><small>Image credit: <a href="https://www.flickr.com/photos/peta-de-aztlan/3476636111/">Peta_de_Aztlan</a>@Flickr. CC-BY 2.0</small></p>
-        </blockquote>
+    <div id="Bodenkunde und Geologie" class="step slide" data-rel-x="2200" data-rel-y="600" data-rotate="30">
+        <h1>Bodenkunde und Geologie</h1>
+       
+ 
+        <div class="notes">
+        </div>
+    </div>
+
+    <div id="Meteorologie und Klimaforschung" class="step slide" data-rel-x="1600" data-rel-y="1600" data-rotate="60">
+        <h1>Meteorologie und Klimaforschung</h1>
+       
 
         <div class="notes">
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="1600" data-rel-y="1600" data-rotate="60">
-        <h1>More text styles</h1>
-        <p>As usual, use <em>em</em> to emphasize, <br />
-           <strong>strong</strong> for strong, <u>u</u> for underline,<br />
-           <strike>strike</strike> for strikethrough and <q>q for inline quotations</q>.</p>
-           
-        <p>If you're a software engineer like me, you will often use the 
-           <code>&lt;code&gt;</code> tag for monospaced inline text.</p>
-
-        <div class="notes">
-        </div>
-    </div>
-
-    <div class="step slide" data-rel-x="600" data-rel-y="2200" data-rotate="90">
-        <h1>Motion effects 101</h1>
+    <div id="Ozeanographie und Gewässerkunde" class="step slide" data-rel-x="600" data-rel-y="2200" data-rotate="90">
+        <h1>Ozeanographie und Gewässerkunde</h1>
         <p>Items on the slide can</p>
         <p class="fly-in fly-out">Fly in</p>
         <p class="fade-in fade-out" style="transition-delay: 2s">Fade in</p>
         <p class="zoom-in zoom-out" style="transition-delay: 4s">And zoom in</p>
         
-        <p class="left bottom"><small>...just like in PowerPoint. Yeah, I know I'm being lame, but it was fun to learn to do this in CSS3.</small></p>
+        
 
         <div class="notes">
         <p>This step here doesn't introduce anything new when it comes to data attributes, but you
@@ -246,16 +231,16 @@
         </div>
     </div>
 
-    <div id="addons" class="step slide title" data-rel-x="-600" data-rel-y="2200" data-rotate="120">
-        <h2>Add-ons</h2>
+    <div id="Kartographie und GIS" class="step slide title" data-rel-x="-600" data-rel-y="2200" data-rotate="120">
+        <h2>Kartographie und GIS</h2>
         <div class="notes">
         <p>This version of impress.js includes several add-ons, striving to make this a
            full featured presentation app.</p>
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-1600" data-rel-y="1600" data-rotate="150" data-autoplay="3">
-        <h1>Impress.js plugins</h1>
+    <div id="Archäologie" class="step slide" data-rel-x="-1600" data-rel-y="1600" data-rotate="150" data-autoplay="3">
+        <h1>Archäologie</h1>
         <ul>
         <li>A new <a href="https://github.com/impress/impress.js/blob/master/src/plugins/README.md">plugin framework</a> allows for rich extensibility,
             without bloating the core rendering library.
@@ -277,8 +262,8 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-2200" data-rel-y="600" data-rotate="180">
-        <h1>Highlight.js</h1>
+    <div id="Quellen" class="step slide" data-rel-x="-2200" data-rel-y="600" data-rotate="180">
+        <h1>Quellen</h1>
         <pre><code>
         // `init` API function that initializes (and runs) the presentation.
         var init = function () {
@@ -301,111 +286,7 @@
            directory, since it is an independent third party plugin, not really an impress.js plugin. You have
            to include it via it's own &lt;link&gt; and &lt;script&gt; tags.</p>
         </div>
-    </div>
-
-    <div class="step slide" data-rel-x="-2200" data-rel-y="-600" data-rotate="210">
-        <h1>Mermaid.js</h1>
-        <div class="mermaid">
-        %% This is a comment in mermaid markup
-        graph LR
-          A(Support for<br />diagrams)
-          B[Provided by<br />mermaid.js]
-          C{Already<br />know<br />mermaid?}
-          D(<a href=&quot;http://knsv.github.io/mermaid/index.html#usage&quot;>Tutorial</a>)
-          E(Great, hope you enjoy!)
-          A-->B
-          B-->C
-          C--No-->D
-          C--Yes-->E
-          classDef startEnd fill:#fcc,stroke:#353,stroke-width:2px;
-          class A,D,E startEnd;
-        </div>
-
-        <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
-        <p>Use \(\LaTeX\), MathML or AsciiMath to properly show mathematical formula.</p>
-        <div class="notes">
-          Mermaid.js, likewise in a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, draws SVG diagrams from a MarkDown-like syntax. To learn
-          more about it <a href="http://knsv.github.io/mermaid/index.html#usage">read the fine manual</a>.
-        </div>
-    </div>
-
-    <div id="markdown" class="step slide markdown" data-rel-x="-1600" data-rel-y="-1600" data-rotate="240">
-# Markdown.js
-        
-* [Markdown.js](https://github.com/evilstreak/markdown-js) integration: for authors in a hurry!
-  * ...or lazy ;-)
-* Jot down bullet points in *Markdown*
-  * ...have it automatically converted to HTML
-  * Markdown is converted into a presentation client side, in the browser. This is unlike
-   existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and 
-   markdown-impress where you generate a new
-   html file on the command line.
-* [A more advanced Markdown presentation is here.](../markdown/)
-    </div>
-
-    <div id="acme" class="step slide" data-rel-x="-600" data-rel-y="-2200" data-rotate="270">
-        <ul>
-        <li>Remember, in <em>impress.js</em> the full power of HTML5, CSS3 &amp; JavaScript is always at your fingertips!</li>
-        <li>For example, you can use tables, forms, or dynamic charts as you would on any web page:</li>
-        </ul>
-        <h2>Acme Inc Quarterly Profits</h2>
-
-        <!-- Improvised bar graph of divs, to avoid copying something like NVD3 into the repo. -->
-        <div id="acme-graph">
-            <div id="acme-graph-bars">
-                <div id="acme-graph-q1"></div>
-                <div id="acme-graph-q2"></div>
-                <div id="acme-graph-q3"></div>
-                <div id="acme-graph-q4"></div>
-            </div>
-            <div id="acme-graph-bottom"></div>
-        </div>
-
-        <table border="1">
-        <tr><td>Q1</td><td id="acme-q1">234€</td></tr>
-        <tr><td>Q2</td><td id="acme-q2">255€</td></tr>
-        <tr><td>Q3</td><td><input id="acme-q3" size="5" oninput="acmeDrawGraph();" />€ <small>(insert here)</small></td></tr>
-        <tr><td>Q4</td><td><input id="acme-q4" size="5" oninput="acmeDrawGraph();" />€</td></tr>
-        </table>
-        <div class="notes">
-        </div>
-    </div>
-    <script type="text/javascript">
-        var acmeDrawGraph = function() {
-            var profits = {};
-            
-            // Q1-Q2: get innerHTML, remove €
-            var value = document.getElementById('acme-q1').innerHTML;
-            if( value[value.length-1] == "€" ) value = value.substring(0, value.length-1);
-            profits['q1'] = value;
-            var value = document.getElementById('acme-q2').innerHTML;
-            if( value[value.length-1] == "€" ) value = value.substring(0, value.length-1);
-            profits['q2'] = value;
-            
-            // Q3-Q4: get input.value
-            profits['q3'] = document.getElementById('acme-q3').value;
-            profits['q4'] = document.getElementById('acme-q4').value;
-
-            // Convert all to numeric value, and remember max value for scaling purposes.
-            var max = profits['q1'];
-            for ( var q in profits ) {
-                profits[q] = isNaN(profits[q]) ? 0 : Number(profits[q]);
-                if( profits[q] > max ) {
-                    max = profits[q];
-                }
-            }
-            
-            // Draw the bar graph
-            for ( var q in profits ) {
-                var h = 300 * profits[q] / max;
-                var div = document.getElementById('acme-graph-'+q);
-                div.style = 'height: ' + h + 'px';
-            }
-        };
-        // This draws the first 2 bars during page load
-        acmeDrawGraph();
-    </script>
+   </div>
 
     <!--
         This step also sets a custom data-transition-duration. All of the above steps used the value set
