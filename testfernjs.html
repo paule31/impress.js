@@ -121,33 +121,26 @@
         <h3><a href="https://www.geographie.uni-jena.de/Dubois">Dr. Clémence Dubois</a> (Inhalt), Paul Ehrhardt (Präsentation) | <a href="https://www.geographie.uni-jena.de/eo.html">Lehrstuhl für Fernerkundung</a></h3>
 
         <div class="notes">
-        Any element with the class="notes" will not be displayed. This can
-        be used for speaker notes. In fact, the impressConsole plugin will
-        show it in the speaker console!
+        
         </div>
     </div>
 
     <div id="Hauptmenü" class="step slide" data-rel-x="2200" data-rel-y="0">
         <h1>Anwendungen</h1>
         <ul>
-            <li><a href="#step-1">Forstwirtschaft</a></li>
-            <li><a href="#step-2">Landwirtschaft</a></li>
-            <li><a href="#step-3">Bodenkunde und Geologie</a></li>
-            <li><a href="#step-4">Meteorologie und Klimaforschung</a></li>
-            <li><a href="#step-5">Ozeanographie und Gewässerkunde</a></li>
-            <li><a href="#step-6">Kartographie und GIS</a></li>
-            <li><a href="#step-7">Archäologie</a></li>
-            <li><a href="#addons">Quellen</a></li>
+            <li><a href="#Forstwirtschaft">Forstwirtschaft</a></li>
+            <li><a href="#Landwirtschaft">Landwirtschaft</a></li>
+            <li><a href="#Bodenkunde und Geologie">Bodenkunde und Geologie</a></li>
+            <li><a href="#Meteorologie und Klimaforschung">Meteorologie und Klimaforschung</a></li>
+            <li><a href="#Ozenaographie und Gewässerkunde">Ozeanographie und Gewässerkunde</a></li>
+            <li><a href="#Kartographie und GIS">Kartographie und GIS</a></li>
+            <li><a href="#Archäologie">Archäologie</a></li>
+            <li><a href="#Quellen">Quellen</a></li>
             <li><a href="#moreinfo">More info</a></li>
         </ul>
 
         <div class="notes">
-           <p>Table of Contents, with links to other slides of this same presentation.</p>
-         
-           <p>Note that instead of absolute positioning we use relative positioning,
-           with the data-rel-x and data-rel-y attributes. This means the step is
-           positioned relative to the foregoing step. In other words, this is 
-           equivalent to data-x="0" data-y="-3000".</p>
+           
         </div>
     </div>
 
@@ -156,26 +149,20 @@
         
 
         <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
+         
         </div>
     </div>
 
     <div id="Landwirtschaft" class="step slide">
         <h1>Landwirtschaft</h1>
         <ul>
-            <li>A slide with bullet points. This is the first point.</li>
-            <li>Second point</li>
-            <li>Third point. Under this point we also have some sub-bullets:
-                <ul>
-                    <li>Sub-bullet 1</li>
-                    <li>Sub-bullet 2</li>
-                </ul>
-            </li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
 
         <div class="notes">
+        
         </div>
     </div>
 
@@ -190,6 +177,7 @@
        
  
         <div class="notes">
+        
         </div>
     </div>
 
@@ -198,12 +186,13 @@
        
 
         <div class="notes">
+        
         </div>
     </div>
 
     <div id="Ozeanographie und Gewässerkunde" class="step slide" data-rel-x="600" data-rel-y="2200" data-rotate="90">
         <h1>Ozeanographie und Gewässerkunde</h1>
-        <p>Items on the slide can</p>
+        <p></p>
         <p class="fly-in fly-out">Fly in</p>
         <p class="fade-in fade-out" style="transition-delay: 2s">Fade in</p>
         <p class="zoom-in zoom-out" style="transition-delay: 4s">And zoom in</p>
@@ -211,80 +200,36 @@
         
 
         <div class="notes">
-        <p>This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        </p><p>
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        </p><p>        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        </p><p>
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        </p><p>
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        </p>
+        
         </div>
     </div>
 
     <div id="Kartographie und GIS" class="step slide title" data-rel-x="-600" data-rel-y="2200" data-rotate="120">
         <h2>Kartographie und GIS</h2>
-        <div class="notes">
-        <p>This version of impress.js includes several add-ons, striving to make this a
-           full featured presentation app.</p>
-        </div>
+        
+      
+      <div class="notes">
+        
+      </div>
     </div>
 
     <div id="Archäologie" class="step slide" data-rel-x="-1600" data-rel-y="1600" data-rotate="150" data-autoplay="3">
         <h1>Archäologie</h1>
-        <ul>
-        <li>A new <a href="https://github.com/impress/impress.js/blob/master/src/plugins/README.md">plugin framework</a> allows for rich extensibility,
-            without bloating the core rendering library.
-            <ul>
-            <li class="substep">Press 'P' to open a presenter console.</li>
-            <li class="substep">When you move the mouse, navigation controls are visible on your bottom left</li>
-            <li class="substep">Autoplay makes the slides advance after a timeout</li>
-            <li class="substep">Relative positioning plugin is often a more convenient way to position your slides when editing. (<a href="https://github.com/impress/impress.js/blob/master/examples/classic-slides/index.html">See html for this presentation.</a>)</li>
-            </ul>
-        </li>
-        </ul>
-        <div class="notes">
-        <p>This presentation also uses speaker notes. They are not visible in the presentation, but shown in the impress console.</p>
         
-        <p>If you pressed P only now, this is the first time you see these notes. In fact, there has been notes on preceding slides as well.
-           You can use the navigation controls at the bottom of the impress console to browse back to them.</p>
-
-        <p>And did you notice how those bullet points appear one by one as you press space/arrow? That's another plugin, called substeps.</p>
+      
+      
+        <div class="notes">
+        
         </div>
     </div>
 
     <div id="Quellen" class="step slide" data-rel-x="-2200" data-rel-y="600" data-rotate="180">
         <h1>Quellen</h1>
-        <pre><code>
-        // `init` API function that initializes (and runs) the presentation.
-        var init = function () {
-            if (initialized) { return; }
-            execPreInitPlugins();
-            
-            // First we set up the viewport for mobile devices.
-            // For some reason iPad goes nuts when it is not done properly.
-            var meta = $("meta[name='viewport']") || document.createElement("meta");
-            meta.content = "width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no";
-            if (meta.parentNode !== document.head) {
-                meta.name = 'viewport';
-                document.head.appendChild(meta);
-            }        
-        </code></pre>
+        
+      
+      
         <div class="notes">
-        <p>The Highlight.js library provides really nice color coding of source code.
-           It automatically applies to any code inside a &lt;pre&gt;&lt;code&gt; element.</p>
-        <p>Highlight.js is found under the <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, since it is an independent third party plugin, not really an impress.js plugin. You have
-           to include it via it's own &lt;link&gt; and &lt;script&gt; tags.</p>
+        
         </div>
    </div>
 
