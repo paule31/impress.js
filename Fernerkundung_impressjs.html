@@ -1,28 +1,32 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<style>
-body{
-	background-color: #dfdfdf;
-}
-	.box {
-	display: block;
-	width: 800px;
-	height: 600px;
-	padding: 30px 50px;
-	background-color: white;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-	border: 1px solid rgba(0, 0, 0, .3);
-	border-radius: 20px;
-	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-	font-family: Arial, sans-serif;
-	font-size: 40px;
-	color: rgb(102, 102, 102);
-}
-</style>
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title><a href="https://www.geographie.uni-jena.de/Dubois">Dr. Clémence Dubois</a> (Inhalt), Paul Ehrhardt (Präsentation) | <a href="https://www.geographie.uni-jena.de/eo.html">Lehrstuhl für Fernerkundung</a</title>
+    
+    <meta name="description" content="Anwendungen der Fernerkundung" />
+    <meta name="author" content="Dr. Dubois and Paul Ehrhardt" />
 
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+	
  <div class="step slide title" data-x="-2200" data-y="-3000">
         <h1>Fernerkundung - Anwendungen</h1>
         <h2>GEOG 345 Einführung in die Fernerkundung für Schulen (Vorlesung 2)</h2>
@@ -219,10 +223,18 @@ body{
 -->
 <div id="impress-toolbar"></div>
 
-<div class="impress-progressbar"><div></div></div>
-<div class="impress-progress"></div>
+<div id="impress-toolbar"></div>
 
-<div id="impress-help"></div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate. <br/>
+       Press 'P' to launch speaker console.</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
 
 <script type="text/javascript" src="../../js/impress.js"></script>
 <script>impress().init();</script>
