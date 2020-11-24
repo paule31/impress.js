@@ -235,7 +235,13 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
 }
 </script>
-
+	    
+<script>
+if ( !window.location.search.match(/print/) ) {
+    impress().init();
+}
+</script>
+	    
 <script type="text/javascript" src="../../js/impress.js"></script>
 <script>impress().init();</script>
 
